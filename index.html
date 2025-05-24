@@ -202,9 +202,34 @@
   <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-    createChat({
-      webhookUrl: 'https://3edc-167-249-40-109.ngrok-free.app/webhook/8831639a-fc30-4470-85d5-918498427540/chat' // Reemplaza con tu URL real
-    });
+   createChat({
+	webhookUrl: 'https://3edc-167-249-40-109.ngrok-free.app/webhook/8831639a-fc30-4470-85d5-918498427540/chat',
+	webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'en',
+	initialMessages: [
+		'Hola ! 👋',
+		'Mi nombre es Julian. Como puedo ayudarte el día de hoy?'
+	],
+	i18n: {
+		en: {
+			title: 'Hi there! 👋',
+			subtitle: "Start a chat. We're here to help you 24/7.",
+			footer: '',
+			getStarted: 'New Conversation',
+			inputPlaceholder: 'Type your question..',
+		},
+	},
+});
+
   </script>
 
 </body>
