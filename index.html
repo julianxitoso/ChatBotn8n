@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Claro Colombia - Página de ejemplo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <style>
+    :root {
+      --claro-red: #e60000;
+      --claro-dark: #1d1d1b;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: var(--claro-red);
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .hero-section {
+      background: url('https://www.claro.com.co/sites/default/files/styles/hero/public/2023-11/Claro%20Colombia%20-%20Hogar%20y%20M%C3%B3vil.jpg?itok=6X0t8vG6') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 120px 0;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .btn-primary {
+      background-color: var(--claro-red);
+      border-color: var(--claro-red);
+    }
+
+    .btn-primary:hover {
+      background-color: #b80000;
+      border-color: #a00000;
+    }
+
+    .card-title {
+      color: var(--claro-red);
+    }
+
+    footer {
+      background-color: var(--claro-dark);
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    :root {
+	--chat--color-primary: #e74266;
+	--chat--color-primary-shade-50: #db4061;
+	--chat--color-primary-shade-100: #cf3c5c;
+	--chat--color-secondary: #20b69e;
+	--chat--color-secondary-shade-50: #1ca08a;
+	--chat--color-white: #ffffff;
+	--chat--color-light: #f2f4f8;
+	--chat--color-light-shade-50: #e6e9f1;
+	--chat--color-light-shade-100: #c2c5cc;
+	--chat--color-medium: #d2d4d9;
+	--chat--color-dark: #101330;
+	--chat--color-disabled: #777980;
+	--chat--color-typing: #404040;
+
+	--chat--spacing: 1rem;
+	--chat--border-radius: 0.25rem;
+	--chat--transition-duration: 0.15s;
+
+	--chat--window--width: 400px;
+	--chat--window--height: 600px;
+
+	--chat--header-height: auto;
+	--chat--header--padding: var(--chat--spacing);
+	--chat--header--background: var(--chat--color-dark);
+	--chat--header--color: var(--chat--color-light);
+	--chat--header--border-top: none;
+	--chat--header--border-bottom: none;
+	--chat--header--border-bottom: none;
+	--chat--header--border-bottom: none;
+	--chat--heading--font-size: 2em;
+	--chat--header--color: var(--chat--color-light);
+	--chat--subtitle--font-size: inherit;
+	--chat--subtitle--line-height: 1.8;
+
+	--chat--textarea--height: 50px;
+
+	--chat--message--font-size: 1rem;
+	--chat--message--padding: var(--chat--spacing);
+	--chat--message--border-radius: var(--chat--border-radius);
+	--chat--message-line-height: 1.8;
+	--chat--message--bot--background: var(--chat--color-white);
+	--chat--message--bot--color: var(--chat--color-dark);
+	--chat--message--bot--border: none;
+	--chat--message--user--background: var(--chat--color-secondary);
+	--chat--message--user--color: var(--chat--color-white);
+	--chat--message--user--border: none;
+	--chat--message--pre--background: rgba(0, 0, 0, 0.05);
+
+	--chat--toggle--background: var(--chat--color-primary);
+	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
+	--chat--toggle--color: var(--chat--color-white);
+	--chat--toggle--size: 64px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Claro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Personas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Negocios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Empresas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Institucional</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Bienvenido a Claro Colombia</h1>
+      <p class="lead">Conectividad confiable para tu hogar y empresa</p>
+      <a href="#" class="btn btn-primary btn-lg">Descubre nuestros planes</a>
+    </div>
+  </div>
+
+  <!-- Servicios -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Nuestros Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="https://www.claro.com.co/sites/default/files/styles/servicio/public/2023-11/Internet%20Hogar.jpg?itok=6X0t8vG6" class="card-img-top" alt="Internet Hogar">
+            <div class="card-body">
+              <h5 class="card-title">Internet Hogar</h5>
+              <p>Disfruta de la mejor velocidad y estabilidad con fibra óptica Claro.</p>
+              <a href="#" class="btn btn-primary">Ver planes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="https://www.claro.com.co/sites/default/files/styles/servicio/public/2023-11/Telefonía%20Móvil.jpg?itok=6X0t8vG6" class="card-img-top" alt="Telefonía Móvil">
+            <div class="card-body">
+              <h5 class="card-title">Telefonía Móvil</h5>
+              <p>Planes postpago y prepago con cobertura nacional y roaming incluido.</p>
+              <a href="#" class="btn btn-primary">Ver planes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="https://www.claro.com.co/sites/default/files/styles/servicio/public/2023-11/Televisión%20HD.jpg?itok=6X0t8vG6" class="card-img-top" alt="Televisión HD">
+            <div class="card-body">
+              <h5 class="card-title">Televisión HD</h5>
+              <p>Accede a tus canales favoritos y contenido exclusivo en alta definición.</p>
+              <a href="#" class="btn btn-primary">Ver paquetes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-4">
+    <p class="mb-1">&copy; 2025 Claro Colombia - Todos los derechos reservados</p>
+    <p>
+      <a href="#">Política de privacidad</a> |
+      <a href="#">Términos y condiciones</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- n8n Chat Widget -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://3edc-167-249-40-109.ngrok-free.app/webhook/8831639a-fc30-4470-85d5-918498427540/chat' // Reemplaza con tu URL real
+    });
+  </script>
+
+</body>
+</html>
